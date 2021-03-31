@@ -47,6 +47,7 @@ h5,
 h6,
 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* components */
@@ -91,6 +92,10 @@ p {
 }
 
 /* header */
+
+.header {
+  border: 1px solid #ececec;
+}
 
 .header .container,
 .navigation,
@@ -151,7 +156,7 @@ p {
 }
 
 .hero-title {
-  width: 696px;
+  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -221,6 +226,7 @@ p {
 }
 
 .section-title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -233,12 +239,17 @@ p {
   background-color: var(--background-grey);
 }
 
+.member-description {
+  padding: 30px;
+}
+
 .team-list {
   display: flex;
   margin: -15px;
 }
 
 .team-list li {
+  max-width: 270px;
   margin: 15px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -247,9 +258,7 @@ p {
 }
 
 .team-member {
-  padding-top: 30px;
-  padding-bottom: 10px;
-
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -258,8 +267,6 @@ p {
 }
 
 .team-position {
-  padding-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -278,14 +285,14 @@ p {
 }
 
 .address {
-  padding-top: 20px;
+  margin-top: 20px;
 
   font-style: normal;
   color: var(--white-color);
 }
 
 .footer-contacts {
-  padding-top: 9px;
+  margin-top: 9px;
 
   color: rgba(255, 255, 255, 0.6);
 }
@@ -295,7 +302,7 @@ p {
 .work-filter {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .work-filter .item + .item {
@@ -334,16 +341,17 @@ p {
 .work-list .item {
   margin: 15px;
   flex-basis: calc(100% / 3 - 30px);
-  border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
 
 .work-list-content {
-  margin: 20px 24px;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .work-name {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   margin-bottom: 0;
   font-size: 18px;
   line-height: 2;
